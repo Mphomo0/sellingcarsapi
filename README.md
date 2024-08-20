@@ -11,8 +11,7 @@
 6. [Testing](#testing)
 7. [Deployment](#deployment)
 8. [Contributing](#contributing)
-9. [License](#license)
-10. [Contact](#contact)
+9. [Contact](#contact)
 
 ## Introduction
 
@@ -69,14 +68,53 @@ The server should now be running at `http://localhost:5000`
 
 ## Authentication
 
-- `POST /api/users - Register New User
-- `POST /api/users/login - Login User
+- `POST /api/users - Register New User`
+- `POST /api/users/login - Login User`
 
 ## Car Management
 
-- `GET /api/cars/ - Get all cars
-- `GET /api/cars/:id - Get a specific car
-- `POST /api/cars/ - Get all cars
-- `GET /api/cars/ - Get all cars
-- `GET /api/cars/ - Get all cars
-- `GET /api/cars/ - Get all cars
+- `GET /api/cars/ - Get all cars`
+- `GET /api/cars/:id - Get a specific car`
+- `POST /api/cars/ - Create a car`
+- `PUT /api/cars/:id - Update a car`
+- `DELETE /api/cars/:id - Delete a car`
+- `GET /api/cars/featured - Get all featured cars`
+- `GET /api/cars/makes - Get all car makes`
+- `GET /api/cars/models?make=make - Get all model from a specific make`
+- `GET /api/cars/years?make=make&&model=model - Get all years from a specific make/model`
+- `GET /api/cars/prices?make=make&&model=model&&year=year - Get all prices from a specifi make/model/year`
+- `GET /api/cars/search?make=make&&model=model&&year=year&&price=price - Get all cars from the search`
+
+## Environment Variables
+
+```
+PORT = 5000
+MONGODB_URI=YOUR MONGODB URI
+JWT_SECRET=YOUR SECRET
+
+```
+
+## TESTING
+
+```
+# Run unit tests
+npm test
+
+```
+
+## DEPLOYMENT
+
+I used Render to deploy you can use anything you like Vercel, Netlify etc
+
+## CONTRIBUTING
+
+- Fork the repo
+- Create a feature branch (`git checkout -b feature-name`)
+- Commit your changes (`git commit -m "Add Feature`)
+- Push to the branch(`git push origin feature-name`)
+- Open a pull request
+
+## Contact
+
+- Email: mphomoipolai1@gmail.com
+- Website: www.mpho-moipolai.co.za
